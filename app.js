@@ -11,21 +11,11 @@ card.style.position = 'relative';
 // elementos  de la carta 
 const pinta = ['♦', '♥', '♠', '♣']; 
 const valor =['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
-
-
-
 //generador de n randoms pintaaaaaaaa
-
 var pintaRandom = Math.floor(Math.random()*4);
-
-
 // generador de randoms valorrrrrrrrrrrr
-
 var valorRandom = Math.floor(Math.random()*13);
-
-
 // estructura y centro de cartaaa
-
 const value = document.createElement('card');
 value.textContent = valor[valorRandom];
 value.style.fontSize = '72px';
@@ -33,10 +23,6 @@ value.style.color = 'black';
 value.style.position = 'absolute';
 value.style.top = '66px';
 value.style.left = '38px';
-
-
-
-
 
 // estilo de carta
 const suit = document.createElement('card');
@@ -50,9 +36,7 @@ if (pinta[pintaRandom] === '♦' || pinta[pintaRandom] === '♥') {
 suit.style.position = 'absolute';
 suit.style.top = '-54px';
 suit.style.left = '-15px';
-
 // estilo de carta secundario
-
 const suit2 = document.createElement('span');
 suit2.textContent = pinta[pintaRandom];
 suit2.style.fontSize = '36px';
@@ -65,9 +49,6 @@ if (pinta[pintaRandom] === '♦' || pinta[pintaRandom] === '♥') {
   suit2.style.top ='95px';
   suit2.style.left ='55px';
   
-
-
-
 // Agregar el elemento span al elemento con clase 'valuee'
 value.appendChild(suit);
 value.appendChild(suit2);
